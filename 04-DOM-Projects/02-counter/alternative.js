@@ -3,6 +3,9 @@ const decrease = document.querySelector(".decrease");
 const reset = document.querySelector(".reset");
 const increase = document.querySelector(".increase");
 
+// initialize the value
+let val = 0;
+
 function updateUI(val) {
     value.innerText = val;
     if (val < 0) {
@@ -15,13 +18,11 @@ function updateUI(val) {
 }
 
 decrease.addEventListener("click", function () {
-    let val = parseInt(value.innerText);
     val = val - 1;
     updateUI(val);
 });
 
 increase.addEventListener("click", function () {
-    let val = parseInt(value.innerText);
     val = val + 1;
     updateUI(val);
 });
