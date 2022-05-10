@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .red {
+                background: red;
+                color: white;
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+
+            .blue {
+                background: blue;
+                color: white;
+                text-transform: capitalize;
+                font-size: 10px;
+            }
+
+            .btn {
+                background: #f15025;
+                color: white;
+                font-size: 1.2rem;
+                border: none;
+            }
+        </style>
+        <title>Events</title>
+    </head>
+    <body>
+        <h2>Events in Javascript</h2>
+        <!-- Click Events -->
+        <button class="btn">click me</button>
+        <div>You clicked button : <span id="displayCount">0</span> times</div>
+        <!-- Old way of adding events -->
+        <p onclick="this.classList.add('red')">the old style</p>
+
+        <!-- Add remove class on click -->
+        <div id="specialDiv">This div changes style on each click</div>
+
+        <!-- Other Mouse Events -->
+        <h3>Other Mouse Events in Javascript</h3>
+        <button class="second">Click Me!</button>
+
+        <!-- Key Events -->
+        <h1>Key Events in Javascript</h1>
+        <input type="text" id="name" />
+        <!-- Javascript -->
+        <script src="./app.js"></script>
+    </body>
+</html>
